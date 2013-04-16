@@ -5,6 +5,7 @@ public class ProjectEuler12 {
 
 
 	public static void main(String[] args) {
+		// Generate list of triangular numbers
 		int[] triNum= new int[100000];
 		for (int i=1; i<=100000; i++) {
 			int x=i*(i+1)/2;
@@ -16,6 +17,8 @@ public class ProjectEuler12 {
 		int n=1;
 		int index=0;
 		int test=0;
+		// Generates Array of primes
+		// Inefficient: change to just checking previous primes
 		for (int i=2; (i-n)<=10000; i++) {
 			for (int j=2; j<=Math.sqrt(i); j++) {
 				int k=i%j;
